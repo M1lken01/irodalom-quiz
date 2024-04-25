@@ -1,0 +1,60 @@
+:root {
+  --fg100: #0f0f0f;
+  --fg200: #2f2f2f;
+  --bg100: #fff;
+  --bg200: #d0d0d0;
+  --bg300: #b0b0b0;
+  --green: #34a434;
+  --red: #ba2929;
+}
+
+body {
+  color: var(--fg100);
+  background-color: var(--bg100);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+input,
+button {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+}
+
+input {
+  border: 2px solid var(--fg100);
+}
+
+button {
+  padding: 0.2em;
+  background-color: var(--bg200);
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+}
+
+button:hover {
+  background-color: var(--bg300);
+}
+
+.char-input {
+  display: inline-block;
+  width: 3rem;
+  text-align: center;
+}
+
+.green {
+  background-color: var(--green);
+}
+
+.red {
+  background-color: var(--red);
+}

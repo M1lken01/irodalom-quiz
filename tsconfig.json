@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "ES2015",
+    "moduleResolution": "Node",
+    "target": "ES6",
+    "outDir": "./src/build",
+    "strict": true,
+    "sourceMap": false,
+    "lib": ["DOM", "ES2015"]
+  },
+  
+  "include": ["src/**/*"],
+}
