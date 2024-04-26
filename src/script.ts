@@ -5,8 +5,7 @@ type PuzzleItem = {
   answer?: string;
   shift: number;
 };
-type Puzzle = PuzzleItem[];
-const puzzle: Puzzle = [
+const puzzle: PuzzleItem[] = [
   { question: 'guy de mauoassant', secret: encodeStr('gömböc'), shift: 3 },
   { question: 'muveszi iranyzat', secret: encodeStr('panasszizmus'), shift: 1 },
   { question: 'Az ő műve volt a Bovarjné. Francia író', secret: encodeStr('flaubert'), shift: 3 },
@@ -35,8 +34,8 @@ const puzzle: Puzzle = [
 const decodeStr = (encodedStr: string) => atob(encodedStr);
 puzzle.forEach((p) => (p.answer = decodeStr(p.secret)));
 const decodedAnswers = puzzle.map((item) => decodeStr(item.secret));
-const longestAnswer = Math.max(...decodedAnswers.map((el) => el.length));
-const longestShift = puzzle.reduce((maxShift, item) => ((item.answer || '').length > (maxShift.answer || '').length ? item : maxShift), puzzle[0]).shift;
+const longestAnswer = Math.max(...decodedAnswers.map((obj) => obj.length));
+const longestShift = Math.max(...puzzle.map((obj) => obj.shift));
 const longestAnswerWithShift = Math.max(...puzzle.map((item) => (item.answer || '').length + (longestShift - item.shift) + 1));
 
 const removeAccents = (str: string) => str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -94,7 +93,6 @@ function drawRow(index: number) {
   questionContainer.appendChild(question);
   if (puzzle[index].shift !== longestShift) {
     const shift = document.createElement('div');
-    console.log((longestShift - puzzle[index].shift || 0) + 1);
     shift.style.gridColumn = ((longestShift - puzzle[index].shift || 0) + 1).toString();
     container.appendChild(shift);
   }

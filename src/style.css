@@ -58,6 +58,7 @@ input {
   border: 2px solid var(--fg100);
   outline: 2px solid var(--fg100);
   background-color: var(--bg200);
+  z-index: 1;
 }
 
 button {
