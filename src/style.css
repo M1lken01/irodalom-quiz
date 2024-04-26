@@ -1,22 +1,29 @@
 :root {
   --fg100: #0f0f0f;
   --fg200: #2f2f2f;
+  --fg300: #454545;
   --bg100: #fff;
   --bg200: #d0d0d0;
   --bg300: #b0b0b0;
   --green: #34a434;
   --red: #ba2929;
+  --puzzle-cols: 8;
 }
 
 body {
   color: var(--fg100);
   background-color: var(--bg100);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin: 2vh 5vw;
 }
 
 h1 {
   font-size: 3rem;
+}
+
+ol {
+  font-size: 2rem;
 }
 
 input,
@@ -27,8 +34,30 @@ button {
   border: none;
 }
 
+#char-input-container {
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: repeat(var(--puzzle-cols), auto);
+}
+
+.br {
+  grid-column: var(--puzzle-cols);
+}
+
+#char-input-container > div,
+.char-input {
+  width: 30px;
+}
+
 input {
+  border: 2px solid var(--fg300);
+  width: 100%;
+}
+
+.main {
   border: 2px solid var(--fg100);
+  outline: 2px solid var(--fg100);
+  background-color: var(--bg200);
 }
 
 button {
