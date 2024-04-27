@@ -121,3 +121,11 @@ button:hover {
     justify-content: flex-end;
   }
 }
+
+@media screen and (max-width: 700px) {
+  #char-input-container > div,
+  .char-input {
+    width: 20px;
+    font-size: 1.2rem;
+  }
+}
