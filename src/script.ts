@@ -6,27 +6,43 @@ type PuzzleItem = {
   shift: number;
 };
 const puzzle: PuzzleItem[] = [
-  { question: 'guy de mauoassant', secret: encodeStr('gömböc'), shift: 3 },
-  { question: 'muveszi iranyzat', secret: encodeStr('panasszizmus'), shift: 1 },
-  { question: 'Az ő műve volt a Bovarjné. Francia író', secret: encodeStr('flaubert'), shift: 3 },
-  { question: 'andol iro, pickwick klub, es a twist oliver megalkotoja', secret: encodeStr('dickens'), shift: 0 },
-  { question: 'az orosz realista irok', secret: encodeStr('fölösleges ember'), shift: 6 },
-  { question: 'az o muve', secret: encodeStr('tolsztoj'), shift: 2 },
+  { question: 'Guy de Maupassant elbeszélő költeménye, ami 1880-ban jelent meg, s ez hozta el számára a hírnevet.', secret: 'Z/ZtYvZj', shift: 3 },
   {
-    question: 'realista regeny fo tipusa. az elert karrier kovetkezteben a hos szemelyisege eltorzul, feladja erkolcsi elveit',
-    secret: encodeStr('karrierregény'),
+    question: 'Művészi irányzat. Képviselői tagadják a romantikus költői szerepeket, helyette a sorsszerűséget és az öncélú művészetet hirdették.',
+    secret: 'cGFuYXNzeml6bXVz',
+    shift: 1,
+  },
+  { question: 'Az ő műve volt a Bovaryné. Francia író.', secret: 'ZmxhdWJlcnQ=', shift: 3 },
+  { question: 'Angol író, a Pickwick Klub és a Twist Oliver megalkotója.', secret: 'ZGlja2Vucw==', shift: 0 },
+  {
+    question: 'Az orosz realista írók műveinek hősei, akik valamilyen magasabb elhivatottság nélkül, üresen tengetik életüket.',
+    secret: 'ZvZs9nNsZWdlcyBlbWJlcg==',
+    shift: 6,
+  },
+  {
+    question: 'Az ő műve volt az Anna Karenina. Thomas Mann szerint „a világirodalom legnagyobb társadalmi regényét”-írta meg.',
+    secret: 'dG9sc3p0b2o=',
+    shift: 2,
+  },
+  {
+    question: 'Realista regény fő típusa. Az elért karrier következtében a hős személyisége eltorzul, feladja erkölcsi elveit.',
+    secret: 'a2FycmllcnJlZ+lueQ==',
     shift: 1,
   },
   {
     question:
-      'szatorikus hangvetelu mu, melynek hoste szegeny csavargo, aki ugyessege es eszessege segitsegevel probal boldogulni. legfontossab formai jellegzetessege az egyes felzezetek kotetlen sorrendje',
-    secret: encodeStr('pikareszk'),
+      'Szatirikus hangvételű mű, melynek hőse szegény csavargó, aki ügyessége és eszessége segítségével próbál boldogulni. Legfontossab formai jellegzetessége az egyes fejezetek kötetlen sorrendje.',
+    secret: 'cGlrYXJlc3pr',
     shift: 1,
   },
-  { question: 'lev nzekola jevics tolsztoj orosz iro', secret: encodeStr('háború es béke'), shift: 4 },
   {
-    question: 'A vilagirodalomban falubert mellett az o eletmuveben kezdodik el a hagyomanyos, klasszikus regenyforma atalakulasa.',
-    secret: encodeStr('dosztojevszkij'),
+    question: 'Lev Nyikolajevics Tolsztoj orosz író egyik fő alkotása, kulcsfontosságú dokumentuma az orosz realista regény fejlődésének.',
+    secret: 'aOFib3L6IOlzIGLpa2U=',
+    shift: 4,
+  },
+  {
+    question: 'A világirodalomban Flaubert mellett az ő életművében kezdődik el a hagyományos, klasszikus regényforma átalakulása.',
+    secret: 'ZG9zenRvamV2c3praWo=',
     shift: 7,
   },
 ];

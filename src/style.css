@@ -105,10 +105,19 @@ button:hover {
   background-color: var(--red);
 }
 
+.bottom {
+  display: flex;
+}
+
 @media screen and (max-width: 1100px) {
   #char-input-container > div,
   .char-input {
     width: 24px;
     font-size: 1.4rem;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: flex-end;
   }
 }
