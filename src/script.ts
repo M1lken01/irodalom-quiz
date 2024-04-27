@@ -144,5 +144,5 @@ function init() {
   }
 }
 
-const debug = 1;
+const debug = 0;
 init();
